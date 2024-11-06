@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Eruhart Guild Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body onload="clearItForm.reset();">
+        <h1 id="title">Eruhart Guild Survey</h1>
+        <p id="description">Thank you for taking the time to improve the guild!</p>
+        <form id="survey-form" name="clearItForm" method="post">
+            <fieldset>
+                <label for="name" id="name-label">Enter Your Discord/Twitch Name: <input id="name" name="name" type="text" placeholder="Name" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>How did you find the guild?
+                    <select id="dropdown">
+                        <option value="">(Select One)</option>
+                        <option value="1">Friend Referral</option>
+                        <option value="2">Twitch Recommendations</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+            <label>Would you recommend the Guild to your friends?</label>
+                <label><input id="yes" type="radio" name="yes-no-type" value="yes"/> Yes</label>
+                <label><input id="no" type="radio" name="yes-no-type" value="no"/> No</label>
+            </fieldset>
+            <label>What content do you want to see more?</label>
+                <label>
+                    <input class="checkbox" type="checkbox" value="Content-1" autocomplete="off"/>Just Chatting
+                    <input class="checkbox" type="checkbox" value="Content-2" autocomplete="off"/>Yu-Gi-Oh! Master Duels
+                    <input class="checkbox" type="checkbox" value="Content-3" autocomplete="off"/>Horror
+                    <input class="checkbox" type="checkbox" value="Content-4" autocomplete="off"/>Other Variety
+                </label>
+        <label class="button-label">Leave your additional comments here!
+            <textarea id="commentbox" name="commentbox" rows="25" cols="75" placeholder="Answer Here"></textarea>
+        </label>
+        <input class="button" type="submit" id="submit"/>
+        </form>
+    </body>
